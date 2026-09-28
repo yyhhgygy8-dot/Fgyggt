@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0f1420">
+  <title>پنل وایرگارد</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="login" class="hidden">
+    <form id="loginForm" class="login-box" autocomplete="on">
+      <div class="logo">🛡️</div>
+      <h1>پنل وایرگارد</h1>
+      <input id="lu" name="username" placeholder="نام کاربری" autocomplete="username" required>
+      <input id="lp" name="password" type="password" placeholder="رمز عبور" autocomplete="current-password" required>
+      <button class="btn primary" type="submit">ورود</button>
+      <p id="loginErr" class="err"></p>
+    </form>
+  </div>
+
+  <div id="app" class="hidden">
+    <header class="top">
+      <div class="brand">🛡️ <span>پنل وایرگارد</span></div>
+      <nav id="nav">
+        <button data-p="dashboard" class="active">داشبورد</button>
+        <button data-p="clients">کاربران</button>
+        <button data-p="settings">تنظیمات</button>
+        <button data-p="backup">پشتیبان</button>
+        <button data-p="logs">گزارش‌ها</button>
+        <button data-p="account">حساب</button>
+      </nav>
+      <button id="logoutBtn" class="btn small">خروج</button>
+    </header>
+    <main id="view"></main>
+  </div>
+
+  <div id="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

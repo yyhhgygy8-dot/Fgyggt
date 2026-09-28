@@ -1,0 +1,10 @@
+{
+  "name": "wg-panel",
+  "version": "1.0.0",
+  "description": "پنل مدیریت وایرگارد - WireGuard management panel with quotas, expiry, QR and auto enforcement",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "dependencies": { "qrcode": "^1.5.4" }
+}
